@@ -1,1 +1,1 @@
-this movie streaming platform
+this movie streaming platform for Indian Users
