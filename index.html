@@ -3,100 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TvFlix</title>
-    <meta name="title" content="TvFlix" />
-    <meta
-      name="description"
-      content="Tvflix is a popular movie app made by CodeWithVaibhav."
-    />
+    <title>Movie Design</title>
 
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-
-    <!-- custom css link -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!-- custom js link -->
-    <script src="./assets/js/global.js" defer></script>
-    <script src="./assets/js/index.js" type="module"></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="./index.html" class="logo">
-        <img
-          src="./assets/images/logo.png"
-          width="140"
-          height="32"
-          alt="Vaibhav"
-          srcset=""
-        />
-      </a>
-
-      <div class="search-box" search-box>
-        <div class="search-wrapper searching" search-wrapper>
-          <input
-            type="text"
-            name="search"
-            placeholder="Search any movies..."
-            aria-label="search movies"
-            class="search-field"
-            autocomplete="off"
-            search-field
-          />
-          <img
-            src="./assets/images/search.png"
-            width="24"
-            height="24"
-            class="leading-icon"
-            alt=""
-          />
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">VKGeneration</h1>
         </div>
 
-        <button class="search-btn" search-toggler>
+        <div class="menu-container">
+          <ul class="menulist">
+            <li class="menu-list-item">Home</li>
+            <li class="menu-list-item">Movie</li>
+            <li class="menu-list-item">Services</li>
+            <li class="menu-list-item">Popular</li>
+            <li class="menu-list-item">Trends</li>
+            <li class="menu-list-item"></li>
+          </ul>
+        </div>
+        <div class="searchBar">
+          <input type="text">
+          <i class="search-icon bx bx-search-alt-2"></i>
+        </div>
+
+        <div class="profile-container">
+            <div class="subscribe">subscribe</div>
           <img
-            src="./assets/images/close.png"
-            width="24"
-            height="24"
+            class="profile-picture"
+            src="./img/profile.jpg"
             alt=""
             srcset=""
           />
-        </button>
+          <div class="profile-text-container">
+            
+            <span class="profile-text">profile</span>
+            <i class="bx bxs-down-arrow"></i>
+          </div>
+          <div class="toggle">
+            <i class="bx bxs-moon toggle-icon"></i>
+            <i class="bx bxs-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="sidebar">
+      <i class="left-menu-icon bx bxs-home"></i>
+      <i class="left-menu-icon bx bx-search-alt-2" search-btn></i>
+      <i class="left-menu-icon bx bxs-user"></i>
+      <i class="left-menu-icon bx bxs-bookmarks"></i>
+      <i class="left-menu-icon bx bxs-cart"></i>
+      <i class="left-menu-icon bx bx-tv"></i>
+      <i class="left-menu-icon bx bxs-hourglass-top"></i>
+    </div>
+    <div class="container">
+      <div class="content-container">
+        <div
 
-      <button class="search-btn" search-toggler menu-close>
-        <img
-          src="./assets/images/search.png"
-          width="24"
-          height="24"
-          alt="open search box"
-        />
-      </button>
+          class="featured-container"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url(img/f-1.jpg);
+          "
+        >
+          <div class="movie-detail">
+            <h1>Movie Name</h1>
+            <p class="featured-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus ad provident eligendi? Ipsa qui saepe quaerat officia
+              quia natus sit atque. Provident totam modi dolorum ad quis itaque
+              minus cupiditate!
+            </p>
+            <button class="featured-button btn">Watch Now</button>
+          </div>
+        </div>
 
-      <button class="menu-btn" menu-btn menu-toggler>
-        <img
-          src="./assets/images/menu.png"
-          width="24"
-          height="24"
-          class="menu"
-          alt=""
-          srcset=""
-        />
-        <img
-          src="./assets/images/menu-close.png"
-          width="24"
-          height="24"
-          class="close"
-          alt=""
-          srcset=""
-        />
-      </button>
-      
-    </header>
+        <div class="movie-list-container" popular-movies>
+        </div>
+
+
+        <div class="movie-list-container" top-rated>
+        </div>
+
+        <div
+
+          class="featured-container"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url(img/f-1.jpg);
+          "
+        >
+          <div class="movie-detail">
+            <h1>Movie Name</h1>
+            <p class="featured-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus ad provident eligendi? Ipsa qui saepe quaerat officia
+              quia natus sit atque. Provident totam modi dolorum ad quis itaque
+              minus cupiditate!
+            </p>
+            <button class="featured-button btn">Watch Now</button>
+          </div>
+        </div>
+
+
+        <div class="movie-list-container" upcomming-movies>
+           
+
+        </div>
+        
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+        
+        <div
+
+          class="featured-container"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url(img/f-1.jpg);
+          "
+        >
+          <div class="movie-detail">
+            <h1>Movie Name</h1>
+            <p class="featured-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus ad provident eligendi? Ipsa qui saepe quaerat officia
+              quia natus sit atque. Provident totam modi dolorum ad quis itaque
+              minus cupiditate!
+            </p>
+            <button class="featured-button btn">Watch Now</button>
+          </div>
+        </div>
+
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                   
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                   
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium eum in corporis harum, porro, labore nisi obcaecati pariatur nulla.</p>
+                    <button class="movie-list-item-button btn">Watch Now</button>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="./js/script.js"  type="module"></script>
+    <script src="./js/global.js"  type="module"></script>
 
   </body>
 </html>
